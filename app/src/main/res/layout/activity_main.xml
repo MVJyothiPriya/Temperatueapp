@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/conversionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+
+        <EditText
+            android:id="@+id/editTextCelsius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Celsius"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:onClick="convertTemperature"/>
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+</RelativeLayout>
